@@ -1,0 +1,1023 @@
+
+/*uneversal style*/
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #55565b;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*normal font-weight*/
+.normal{
+    font-weight: 400;
+}
+
+/*align text center*/
+.align-center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.white{
+    color: white;
+}
+
+/*defoulf paragraph in website*/
+p{
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+/*16 px font size*/
+span.large{
+    font-size: 1.6rem;
+    margin: 1.2% 0;
+}
+
+ /*20px font size*/
+span.t-large{
+    font-size: 2rem;
+    margin: 1.2% 0;
+}
+
+/*12px font size*/
+.small{
+    font-size: 1.2rem;
+}
+
+/*50px font size*/
+.normal-font{
+    font-size: 5rem;
+}
+
+/*to make all span in website block type */
+span{
+    display: block;
+}
+
+/*style all sub title in website*/
+.sub-title{ 
+    font-size: 3rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2;
+}
+
+/*style all main title in website*/
+.main-title{ 
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;  
+    margin: .3% 0;  
+}
+
+/*uppercase style*/
+.uppercase{ 
+    text-transform: uppercase;  
+}
+
+.italic{ /*italic style*/
+    font-style: italic;
+}
+
+/*style all button in website*/
+.button{ 
+    /*center the contant of button vertically and horizantally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5645ff;
+    /*to make angle of rectangule curvy */
+    border-radius: 5px;
+    width:200px;
+    height: 50px;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: 550;
+    margin: 3% 0;
+}
+
+/*ancher in button*/
+.button a{
+    color: white;
+}
+
+/*change button background when cursor on it */
+.button:hover{ 
+    background-color: blue;
+}
+
+/*unversal style for ancher in all website */
+a{
+    color: #55565b;
+    text-decoration: none;
+}
+
+/*center elements in website */
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+p.italic{
+    margin: 1%  0  2.5%  ;
+}
+
+/*unevirsal media query 700px*/
+@media screen and (max-width:700px) {
+    
+    /*style all main title in website*/
+    .main-title{ 
+        font-size: 4rem;
+        margin: 1.5% 0;
+    }
+
+    .sub-title{ 
+        font-size: 2.5rem;
+        margin: 1.5% 0;
+    }
+    .normal-font{
+        font-size: 3rem;
+    }
+
+    .button{
+      
+        width:175px;
+        height: 37.5px;
+        font-size: 1.5rem;
+        letter-spacing: 1.3px;
+        margin: 7% auto;
+
+    }
+    p{
+        font-size: 1.25rem;
+    }
+
+}
+
+
+/*style header for all sections*/
+.header-content{
+    margin: 5.5% auto;
+}
+
+/*style all li in website*/
+li {
+    margin-right: 1rem;
+    padding-left: 1.3rem;
+}
+
+
+/*style all ancher in website*/
+ li a{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: white; /*in some case this color will be overrided */
+    font-weight: 570;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}
+
+
+/*header section*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index:11;
+    height: 8rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0 ,.89);
+    display: flex; /*i used flex display to align items(div.main-header) in the center of header*/
+    align-items: center;
+}
+
+
+/*main div in header*/
+.main-header{
+    width: 100%;
+    padding: 0 3.5rem;
+    display: flex;/*i used flex display to align items(div.logo/nav-head-nav) in the center of div.main-header*/
+    align-items: center;
+}
+
+/*div contain span of logo */
+.logo {
+    width: 24%;
+    color: white;
+    font-weight: bolder;
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+}
+
+/*its a nav element*/
+.head-nav{
+    width: 75%;
+    padding-left: 10%;
+}
+
+/*style unorderd list inside the nav element*/
+.head-nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;/*to amke li start from the end of the ul */
+}
+
+
+nav a:hover{
+    color: rgb(147, 194, 255);/*this style will be override in some cases */
+    cursor: pointer;
+    font-weight: 600;
+}
+
+li:last-child{
+    margin-right: 0;
+}
+
+i{/*it may overrided in some cases*/
+    color: white; 
+    font-size: 1.4rem;
+}
+
+/*media query for header 984px*/
+@media screen and (max-width:984px) {
+
+    .main-header{
+        padding: 1.5rem 2.5rem;
+    }
+
+    li {
+        margin-right: 1rem;
+        padding-left: .5rem;
+    }
+    
+     li a{
+        font-weight: 500;
+        letter-spacing: 0.3px;
+    }
+
+    .head-nav{
+        padding-left: 5%;
+    }
+    
+}
+
+
+/*media query header 849px*/
+@media screen and (max-width:849px) {
+
+
+header{
+    justify-content: center;
+    
+}
+
+li.delete{
+    display: none;
+}
+}
+
+@media screen and (max-width:700px) {
+ .head-nav{
+     display: none;
+ }
+
+ header{
+     justify-content: center;
+     background-color: black;
+ }
+ .logo{
+     width: 100%;
+     text-align: center;
+ } 
+}
+       
+
+/*picture contain header and banner*/
+.main-picture{
+    background-image: url('../media/main-img2-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75rem;
+    width: 100%;  
+}
+
+
+/*banner section*/
+.banner{
+    position: relative;
+    top: 20%;
+    bottom: 20%;
+    left: 12.5%;
+    width: 85%;
+    padding: 1%;
+}
+
+/*style the only huge text in the website*/
+.huge-title{
+    font-size: 14rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 15px;
+    padding-top: 1%;
+}
+
+/*specific sub-title in banner */
+.banner .sub-title{
+    font-size: 2.8rem;
+    letter-spacing: 3.5px;
+    color: white;
+    font-weight: 550;
+}
+
+ /*specific paragraph styling*/  
+.banner p{
+    width: 50%;
+    padding-top: 1%;
+}
+
+/*media query for banner in 984px*/
+@media screen and (max-width:984px){
+    
+    .huge-title{
+        font-size: 10rem;
+        letter-spacing: 10px;
+    }
+    
+    .banner .sub-title{
+        font-size: 1.8rem;
+        letter-spacing: 2.5px;
+    }
+
+    .banner p{
+        width: 70%;
+       
+    }
+    
+}
+
+/*media query for banner in 700px*/
+@media screen and (max-width:700px){
+
+    .main-picture{
+        height: 65rem;
+    }
+
+    .banner{
+        top: 30%;
+        bottom: 30%;
+        left: 5.5%;
+    }
+
+    .huge-title{
+        font-size: 7rem;
+        letter-spacing: 7px;
+        text-align: center;
+    }
+    
+    .banner .sub-title{
+        font-size: 1.4rem;
+        letter-spacing: 2.5px;
+        text-align: center;
+    }
+       
+    .banner p{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+/*media query for banner in 480px*/
+@media screen and (max-width:480px){
+   
+    .main-picture{
+        height: 55rem;
+    }
+    .huge-title{
+        font-size: 5rem;
+    }
+    
+    .banner .sub-title{
+        font-size: 1.2rem;
+    }
+       
+    .banner p{
+        width: 100%;
+        text-align: center
+    }
+
+}
+
+/*feature section*/
+/*main div */
+#features{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    width: 100%;
+}
+
+/*sub divs in features div*/
+.feature-describtion{
+    width:30%;
+    margin: 1.3% 0;
+    height: 300px;
+    background-color: #dfdfdf48;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*style paragraph in features-describtion */
+.feature-describtion p{
+    letter-spacing: .5px; 
+}
+
+
+/*style i in features-describtion */
+.feature-describtion i{
+    margin: 1% 47% 3%;
+    color: #55565b;
+}
+
+/*style ancher in features-describtion */
+.feature-describtion a:hover{
+    color: rgb(0, 106, 155);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contant{
+    padding: 0 2rem;
+}
+
+
+.feature-describtion .f-extra img{
+    margin: 10% 0 1%;
+ }
+
+/*media query for features in 915px*/
+@media screen and (max-width:915px) {
+    .feature-describtion{
+        width:48%;
+        margin: 1%;
+    }
+
+    #features{
+       justify-content:center ;
+    }
+
+}
+
+/*media query for features in 600px*/
+@media screen and (max-width:600px) {
+    .feature-describtion{
+        width:100%;
+    }
+
+    .feature-describtion .f-extra{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       align-content: center;;
+    }
+
+
+}
+
+
+/*extra-section*/
+.extra{
+    background-image: url('../media/extra-what-we-do-01-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 1.5% 3%;
+    color: white;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*style button in extra section*/
+.extra .button{
+    margin: 2% auto;
+}
+
+/*media query for extra section in 700px */
+@media screen and (max-width:700px){
+    .extra{
+        height: 300px;
+    }
+}
+
+/*portifolio section*/
+#portifolio{
+    margin: 7% 0;
+}
+
+/*style ancher in sub-nav*/
+.sub-nav a{
+    color: #55565b;
+}
+
+/*style ancher:hover in sub-nav*/
+.sub-nav a:hover{
+    font-weight: 600;
+    color: #55565b;
+}
+
+.sub-nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.sub-nav{
+    margin: 5% 0;
+}
+
+.portifolio-describtion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 7%;
+}
+
+/*div contain img*/
+.img-container{
+    width: 31% ;
+    padding: 1rem 0; 
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+/*media query for portifoilo section in 984px */
+@media screen and (max-width:984px){
+
+    .img-container{
+        width: 45% ;
+    }
+}
+
+
+/*media query for portifolio section in 480px*/
+@media screen and (max-width:480px){
+    .sub-nav{
+        display: none;
+    }
+
+    .img-container{
+        width:100% ;
+        padding:.5rem 1rem; 
+       
+    }
+   
+}
+
+
+/*elements secion*/
+#elements{
+    margin: 7% 3%;
+}
+
+/*main div*/
+.element-describtion{
+    display: flex;
+    width: 100%;
+    line-height: 2;
+}
+
+.element-describtion1{
+    width: 48%;
+    margin : 1.5% 2% 1.5% 0; 
+}
+
+.element-describtion1 .button{
+    margin: 7% 0 5% 0;
+    background-color: black;
+    width: 250px;
+    height: 55px;
+}
+
+.element-describtion1 a{
+    letter-spacing: 3px;
+}
+ /*i gave anchore button class to chang the color and background color when the cursor on it */ 
+.element-describtion1 .button:hover{ 
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+
+}
+
+.element-describtion2{
+    width: 48%;
+    margin : 1.5% 2% 1.5% 2%;
+}
+
+.element-describtion2 a{
+    color: #55565b;
+}
+
+.lists{
+    display: flex;
+    width: 100%;
+}
+
+.lists ul{
+    padding: 0;
+    list-style: upper-roman;
+}
+
+.lists a{
+    color: #006dc7;
+}
+
+.lists a:hover{
+    font-weight: 550;
+}
+.lists li:hover{
+    font-weight: 550;
+}
+.lists li{
+    color: #006dc7; ;
+    padding: 0 0 0 .5rem;
+    margin-bottom: 2%;
+    font-size: 1.4rem;
+}
+.list1{
+    padding: 0 0 0 2rem;
+    width: 48%;
+    margin-right: 7%;
+}
+
+.list2{
+    padding: 0 0 0 2rem;
+    width: 48%;
+}
+
+/*media query for elements section in 800px*/
+@media screen and (max-width:800px) {
+
+    .element-describtion{
+        flex-wrap: wrap;
+    }
+
+    .element-describtion1{
+        width: 100%;
+        
+    }
+
+    .element-describtion2{
+        width: 100%;
+        
+    }
+
+    .element-describtion1 a.button{
+        margin: 5% 0 3% 0;
+        width:175px;
+        height: 37.5px;
+        font-size: 1.5rem;
+        letter-spacing: 1.3px; 
+    }
+
+    .element-describtion1 a{
+        letter-spacing: 1.5px;
+    }
+    .lists a{
+        font-size: 1.3rem;
+    }
+    
+}
+
+/*about section*/
+#about{
+    margin: 7% 0;
+    background-image: url('../media/culture.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#about p {
+    margin: 1% 10%;
+}
+
+#about p.italic{
+    margin: 1%  0 2% 0 ;
+}
+
+/*team section*/
+#team{
+    margin: 7% 3%;
+}
+
+.header-content{  
+ margin: 5.5% auto;
+}
+
+.our-team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.employee{
+   margin: 1% 0;
+   width: 31.5%;
+   height: auto;
+}
+
+.employee img{
+    width: 100%; 
+}
+
+#team p {
+ line-height: 2;
+ 
+}
+
+
+/*acheivement section*/
+/*main div*/
+.achievement{
+    margin: 7% 0 0 0;
+    background-image: url('../media/extra-what-we-do-01-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: stretch;
+}
+
+.ach-content{
+    width: 25%;
+    background-color: transparent;
+    color: #c1c5cd;
+    text-align: center;
+    font-size: 2rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ach-content i{
+    font-size: 4rem;
+    color: #c1c5cd;;
+}
+
+.ach-content h3{
+    letter-spacing: 2px;
+}
+
+.ach-content:hover{
+    transition: background-color .5s linear;
+    background-color: #5645ff;
+}
+
+/*media query for achievement section in 550px*/
+@media screen and (max-width:550px) {
+    .achievement{
+        height: 500px;
+        flex-wrap: wrap;
+    }
+    
+    .ach-content{
+        width: 50%;
+        font-size: 1.6rem ;
+    }
+    
+    .ach-content i{
+        font-size: 3.5rem;  
+    }
+    
+    .ach-content h3{
+        font-size: small;
+    }
+
+}
+
+/*testamonial section*/
+#testemonial{
+    margin: 0 ;
+    background-color: #f8f8f8;
+    padding: 5% 0 5% 0;
+}
+
+.what-people-say{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person{
+    width: 20%;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.person img{
+border-radius: 100%;
+}
+
+.p-name{
+    margin: 2% 0 0 0;
+    font-size: 5.5rem;
+    color: #5645ff;
+    font-weight: 100;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+}
+
+.persone-detailes p{
+    padding: 2rem;
+    margin: 1% 5%;
+}
+
+/*media query for testimonial section in 480px*/
+@media screen and (max-width:480px) {
+   
+    .persone-detailes p.justify{
+        text-align: justify;
+        margin: 1%;
+    }
+
+    .p-name{
+        font-size: 5rem;
+    }
+    
+}
+
+
+/*blog section*/
+#blog{
+    margin: 7% 1% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.blog-img{
+    width: 16%;
+    height: auto;
+    padding: 0 1rem;
+    margin: 0 .5%;
+}
+
+.blog-img img{
+    
+    width: 80%;
+    height: 100%;
+}
+
+/*media query for blog section in 700px*/
+@media screen and (max-width:700px){
+
+   div.delete{
+        display: none;
+    }
+
+    .blog-img{
+        width: 27%; 
+    }
+}
+
+
+/*footer section*/
+footer{
+    background-color: #212121;
+    height: 250px;
+    padding: 1.5rem 3.5rem; 
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
+
+.contact .logo {
+   color: #7d7d7d;
+   width: 15%;
+}
+
+.footer-nav{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.foot-nav{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    list-style: none;
+}
+
+.social-networks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.foot-nav li {
+    padding-left: 1.3rem;
+}
+
+.footer-nav ul a{
+    color: #7d7d7d;
+}
+
+.footer-nav a:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.social-networks i{
+    color: #7d7d7d;
+    font-size: 2.7rem;
+    padding-left: 2rem;
+}
+
+
+/*style social media icons when cursor on them*/
+.fa-facebook:hover{
+    color: #1877f2;
+}
+
+.fa-twitter:hover{
+    color: #1da1f2;
+}
+
+.fa-youtube:hover{
+    color: #ff0000;
+}
+
+.fa-instagram:hover{
+    color:  #c32aa3;
+}
+
+.fa-pinterest:hover{
+   color: #bd081c;
+}
+
+
+/*media query for footer in 1016px*/
+@media screen and (max-width:1016px) {
+    .foot-nav{
+        display: none;
+    }
+}
+
+/*media query for footer in 480px*/
+@media screen and (max-width:480px) {
+    .social-networks i{
+        width: 75%;
+        font-size: 2.1rem;
+        padding-left: 1.5rem;
+        margin-left: 7% ;
+    }
+}
+/*I DID IT / IMAN ODEH */
